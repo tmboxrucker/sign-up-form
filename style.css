@@ -1,0 +1,161 @@
+:root {
+    --primary-dark: #333;
+    --primary-light: #ededed;
+    --secondary-light: #fefefe;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction:column;
+    height: 100vh;
+    background-color: var(--primary-light);
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-dark);
+    font-size: large;
+}
+
+input, select, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Left Side */
+
+.image {
+    display: flex;
+    flex: 2;
+    background-image: url(./images/Store-Board-Game-Feature-Image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+}
+
+.bgc-icon {
+    width: 200px;
+    padding-right: 20px;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: min-content;
+    background-color: rgba(255, 250, 250, 0.6);
+    padding: 10px;
+    justify-content: center;
+    margin-bottom: 50%;
+}
+
+/* Right Side */
+
+.text {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+p {
+    padding-top: 10px;
+}
+
+.form {
+    flex: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.add-padding {
+    padding-left: 3vw;
+}
+
+/* Inside Form */
+
+.form-inputs {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+}
+
+.log-in {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+form {
+    background-color: rgb(2, 2, 2, .5);
+}
+
+input {
+    border: var(--primary-dark) solid 1px;
+    background-color: var(--secondary-light);
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input:focus {
+    border: var(--primary-dark) solid 1px;
+    box-shadow: 0 0 10px var(--primary-dark);
+    outline: none;
+    
+}
+
+span {
+    color: var(--span);
+}
+
+button {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    padding: 10px 40px;
+    margin: 0px 0px;
+    border-radius: 5px;
+}
+
+/* Show if focused */
+
+input:not(:focus) + .show-on-focus {
+    color: rgb(2, 2, 2, .0);
+}
+
+.show-on-focus {
+    font-size: small;
+    color: black;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+    bottom: 0px;
+    background-color: var(--primary-light);
+}

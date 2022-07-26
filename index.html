@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/board-game-removebg-preview.png">
+</head>
+<body>
+    <div class="content">
+        <div class="image">
+            <div class="image-text">
+                <img src="./images/board-game-removebg-preview.png" alt="logo" class="bgc-icon">
+                <h1 class="bgc">BGC</h1>
+            </div>
+        </div>
+        <div class="form">
+            <div class="text add-padding">
+                <p>Get ready to store your collection to our online database!</p>
+                <p>Sign up below to begin!</p>
+            </div>               
+            <form action="" method="get" autocomplete="off" id="form-inputs">
+                <div class="form-inputs add-padding">
+                    <div class="input">
+                        <label for="username">Username<span aria-label="required" class="username">*</span></label>
+                        <input value = 'TestTest' onfocusout="removeOutline(username)" type="text" name="username" id="username" required minlength="8" pattern="[a-zA-Z]+" title="Must consist of only letters">
+                        <div class="show-on-focus">Username must contain a minimum of 8 characters with no numbers</div>
+                    </div>
+                    <div class="input">
+                        <label for="email">E-mail<span aria-label="required" class="email">*</span></label>
+                        <input value = 'test@test' onfocusout="removeOutline(email)" type="email" name="mail" id="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="pwd">Password<span aria-label="required" class="password">*</span></label>
+                        <input value="Test123!" onfocusout="removeOutline(password)" type="password" name="password" id="password" required pattern="(?=^.{8,}$)(?=.*\d+)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z]+)(?=.*[a-z]+).*$" title="Password must contain a minimum of 8 characters; 1 number, 1 special character, and 1 capital must also be included">
+                        <div class="show-on-focus">Password must contain a minimum of 8 characters; at least 1 number, 1 special character, and 1 capital must also be included</div>
+                    </div>
+                    <div class="input">
+                        <label for="cfmpwd">Confirm Password<span aria-label="required" class="confirm-password">*</span></label>
+                        <input type="password" onfocusout="removeOutline(confirmPassword)" name="confirm-password" id="confirm-password" required>
+                        <div class="show-on-focus"></div>
+                    </div>
+                </div>
+                <div class="add-padding">
+                    <button type="submit">Create Account</button>
+                </div>
+                <div class="log-in add-padding">
+                    Already have an account? <a href="">Log in</a>
+                </div>
+            </form>
+        </div>
+    <div class="footer">
+        Page made by Troy Boxrucker 2022
+    </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

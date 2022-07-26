@@ -28,16 +28,16 @@
                 <div class="form-inputs add-padding">
                     <div class="input">
                         <label for="username">Username<span aria-label="required" class="username">*</span></label>
-                        <input value = 'TestTest' onfocusout="removeOutline(username)" type="text" name="username" id="username" required minlength="8" pattern="[a-zA-Z]+" title="Must consist of only letters">
+                        <input onfocusout="removeOutline(username)" type="text" name="username" id="username" required minlength="8" pattern="[a-zA-Z]+" title="Must consist of only letters">
                         <div class="show-on-focus">Username must contain a minimum of 8 characters with no numbers</div>
                     </div>
                     <div class="input">
                         <label for="email">E-mail<span aria-label="required" class="email">*</span></label>
-                        <input value = 'test@test' onfocusout="removeOutline(email)" type="email" name="mail" id="email" required>
+                        <input onfocusout="removeOutline(email)" type="email" name="mail" id="email" required>
                     </div>
                     <div class="input">
                         <label for="pwd">Password<span aria-label="required" class="password">*</span></label>
-                        <input value="Test123!" onfocusout="removeOutline(password)" type="password" name="password" id="password" required pattern="(?=^.{8,}$)(?=.*\d+)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z]+)(?=.*[a-z]+).*$" title="Password must contain a minimum of 8 characters; 1 number, 1 special character, and 1 capital must also be included">
+                        <input onfocusout="removeOutline(password)" type="password" name="password" id="password" required pattern="(?=^.{8,}$)(?=.*\d+)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z]+)(?=.*[a-z]+).*$" title="Password must contain a minimum of 8 characters; 1 number, 1 special character, and 1 capital must also be included">
                         <div class="show-on-focus">Password must contain a minimum of 8 characters; at least 1 number, 1 special character, and 1 capital must also be included</div>
                     </div>
                     <div class="input">

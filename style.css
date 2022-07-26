@@ -33,6 +33,7 @@ input, select, button {
 /* Left Side */
 
 .image {
+    position: relative;
     display: flex;
     flex: 2;
     background-image: url(./images/Store-Board-Game-Feature-Image.jpg);
@@ -41,6 +42,31 @@ input, select, button {
     background-repeat: no-repeat;
     height: 100vh;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recognition {
+    font-size: small;
+    position: absolute;
+    bottom: 30px;
+    background-color: rgba(255, 250, 250, 0.6);
+    width: 100%;
+    text-align: center;
+    padding: 2px 0px;
+}
+
+.recognition p {
+    padding-top: 0;
+    color: var(--primary-dark);
+}
+
+.recognition a {
+    color: var(--primary-dark);
+}
+
+.recognition a:active {
+    color: var(--primary-light);
 }
 
 .bgc-icon {
@@ -102,6 +128,14 @@ p {
 .log-in {
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.log-in a {
+    color: var(--primary-dark);
+}
+
+.log-in a:active {
+    color: var(--primary-light);
 }
 
 form {
